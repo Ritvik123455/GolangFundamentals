@@ -15,4 +15,6 @@ func main() {
 	hand.print()
 	fmt.Println("----")
 	remainingDeck.print()
+	fmt.Println(cards2.toString())
+	cards2.saveToFile("my_cards.txt")
 }
