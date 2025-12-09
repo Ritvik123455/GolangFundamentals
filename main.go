@@ -17,4 +17,9 @@ func main() {
 	remainingDeck.print()
 	fmt.Println(cards2.toString())
 	cards2.saveToFile("my_cards.txt")
+	cards := newDeckFromFile("my_cards.txt")
+	cards.print()
+	cards.shuffle()
+	fmt.Println("----")
+	cards.print()
 }
